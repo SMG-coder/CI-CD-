@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Static Resources" >
+        <div class="slds-align_absolute-center">
+        <img src={SelectedImage} /></div>
+        <p slot = footer>
+            <template for:each={colors} for:item= "color">
+
+            
+            <span key = {color} class = {color} data-color={color} onclick = {selecthandler}>
+
+            </span>
+
+        </template>
+
+        </p>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+   
+    <div onclick={employeeSelected}>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-tile label = {employee.name} href="#"  type="media">
+            <lightning-avatar slot="media" src={employee.image} fallback-icon-name="standard:person_account" alternative-text="Bruce Wayne" class= "slds-avatar_group-image-large"></lightning-avatar>
+            <ul>
+                <li class="slds-item"> {employee.name}</li>
+                <li class="slds-item"> {employee.age}</li>
+            </ul>
+        </lightning-tile>
+    </div>
+</div>
+    
+</template>

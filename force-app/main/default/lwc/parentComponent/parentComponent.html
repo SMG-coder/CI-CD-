@@ -1,0 +1,13 @@
+<template>
+<h1>Parent Component</h1>
+<template for:each={employees} for:item='emp'>
+    <div key = {emp.code}>
+
+    <c-child-Component onempselected={employeeHandler} employee={emp}></c-child-Component>
+
+    </div>
+</template>
+
+
+
+</template>

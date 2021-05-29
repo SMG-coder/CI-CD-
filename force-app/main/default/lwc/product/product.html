@@ -1,0 +1,23 @@
+<template>
+
+<template for:each ={getMyProducts} for:item="prod">
+<div key = {prod.Id} class="slds-p-around_medium">
+    <lightning-card>
+<p >
+    {prod.Name}
+</p>
+
+
+    <!--<button onclick = {handlerAddCart} value= prod class="buttonCSS">Add to basket</button>-->
+    <lightning-button variant="destructive" label="Base" title="Add to basket" onclick={handlerAddCart} class="slds-m-left_x-small" value = {prod} ></lightning-button>
+
+
+</lightning-card>
+</div>
+
+
+
+
+</template>
+
+</template>
